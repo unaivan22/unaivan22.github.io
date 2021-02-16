@@ -11,7 +11,6 @@
 		<!--end::Fonts-->
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<link href="css/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="css/prismjs.bundle.css" rel="stylesheet" type="text/css" />
         <link href="css/style.bundle.css" rel="stylesheet" type="text/css" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles-->
@@ -62,9 +61,9 @@
 								<div class="dropdown">
 									<!--begin::Toggle-->
 									<div class="topbar-item mr-4" data-offset="10px,0px">
-										<a href="index.html" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">Work</a>
-										<a href="about.html" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">About</a>
-										<a href="javascript:;" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">Contact</a>
+										<a id="indexNav" href="index.html" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">Work</a>
+										<a id="aboutNav" href="about.html" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">About</a>
+										<a href="#bottom-sheet" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">Contact</a>
 										<!-- <div class="btn font-weight-bolder btn-md btn-dark px-5">Get Started</div> -->
 									</div>
 									<!--end::Toggle-->
@@ -141,16 +140,27 @@
 			</span>
 		</div>
 		<!--end::Scrolltop-->
+
+		<div id="bottom-sheet" class="overlay">
+			<aside class="social" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+				<ul class="menu">
+					<li><a href="mailto:dinivannendragunawan@gmail.com" title="Mail me"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-mail d-block"></i> E-mail</a></li>
+					<li><a href="https://www.instagram.com/dinivan.nendra/" target="_blank" title="See my Instagram"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-instagram d-block"></i> Instagram</a></li>
+					<li><a href="https://www.facebook.com/dean.n.indra/" target="_blank" title="See my Facebook"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-facebook d-block"></i> Facebook</a></li>
+					<li><a href="https://twitter.com/unaivan_" target="_blank" title="See my tweets"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-twitter d-block"></i> Twitter</a></li>
+					<li><a href="https://www.linkedin.com/in/dinivan-nendra-gunawan-bb0a64122/" target="_blank" title="See my LinkedIn"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-linkedin d-block"></i> LinkedIn</a></li>
+					<li><a href="https://dribbble.com/unaivan" target="_blank" title="See my Dribbble"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-dribbble d-block"></i> Dribbble</a></li>
+					<li><a href="https://wa.me/6289513627458" target="_blank" title="Text me"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-whatsapp d-block"></i> WhatsApp</a></li>
+				</ul>
+			</aside>
+			<a href="#close" class="btn-close" aria-hidden="true"><span class="mdi mdi-close"></span><span class="sr-only">Close</span></a>
+		</div>
+
+
 		<!--begin::Global Config(global config for global JS scripts)-->
 		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#6993FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
 		<!--end::Global Config-->
-		<!--begin::Global Theme Bundle(used by all pages)-->
-		<script src="js/plugins.bundle.js"></script>
-		<script src="js/prismjs.bundle.js"></script>
-		<script src="js/scripts.bundle.js"></script>
-		<!--end::Global Theme Bundle-->
-		<!--begin::Page Scripts(used by this page)-->
-		<!-- <script src="assets/js/pages/widgets.js"></script> -->
+
 		<!--end::Page Scripts-->
 		<script>
 			window.onresize = function() {

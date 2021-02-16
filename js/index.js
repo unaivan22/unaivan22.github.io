@@ -28,10 +28,7 @@ var data0 = projects.reduce((ac, ele) => {
             <h5 class="font-weight-bolder">${ele[2]}</h5>
             <p class="font-weight-bold">${ele[3]}</p>
 
-            <div class="mt-10">
-                <p class="desc h6">${ele[4]}</p>
-                <a href='` + baseUrl + `${ele[0]}' class='font-weight-bolder h5 mt-12 text-blue'><u>View details</u></a>
-            </div>
+            
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 order-first order-lg-first img-hover-zoom--zoom-n-rotate">
             <a href='` + baseUrl + `${ele[0]}'>
@@ -45,3 +42,6 @@ var data0 = projects.reduce((ac, ele) => {
   
   }, '')
 document.getElementById("projects").innerHTML = data0;
+
+var element = document.getElementById("indexNav");
+  element.classList.add("active");

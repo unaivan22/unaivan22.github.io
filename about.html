@@ -12,11 +12,13 @@
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<!-- <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" /> -->
 		<!-- <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" /> -->
+		<link rel="stylesheet" href="css/plugins.bundle.css">
         <link href="css/style.bundle.css" rel="stylesheet" type="text/css" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles-->
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
+		<!-- <link rel='stylesheet' href='https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css'> -->
 		<link rel="shortcut icon" href="media/ico.png" />
 	</head>
 	<!--end::Head-->
@@ -53,9 +55,9 @@
 								<div class="dropdown">
 									<!--begin::Toggle-->
 									<div class="topbar-item mr-4" data-offset="10px,0px">
-										<a href="index.html" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">Work</a>
-										<a href="about.html" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">About</a>
-										<a href="javascript:;" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">Contact</a>
+										<a id="indexNav" href="index.html" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">Work</a>
+										<a id="aboutNav" href="about.html" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">About</a>
+										<a href="#bottom-sheet" class="btn font-weight-bolder btn-md btn-clean px-5 mr-4">Contact</a>
 										<!-- <div class="btn font-weight-bolder btn-md btn-dark px-5">Get Started</div> -->
 									</div>
 									<!--end::Toggle-->
@@ -89,8 +91,8 @@
 									<div class="row">
 										<h1 class="font-weight-bolder mb-4 col-12 p-0 mb-12">Tools & skills</h1>
 										<div class="col-4">
-											<h3 class="font-weight-bolder mb-6">Interaction</h3>
-											<article id="interaction">
+											<h3 class="font-weight-bolder mb-6">Brainstorming</h3>
+											<article id="brainstorming">
 											</article>
 										</div>
 										<div class="col-4">
@@ -163,6 +165,22 @@
 			<!--end::Page-->
 		</div>
 		<!--end::Main-->
+
+		<div id="bottom-sheet" class="overlay">
+			<aside class="social" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+				<ul class="menu">
+					<li><a href="mailto:dinivannendragunawan@gmail.com" title="Mail me"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-mail d-block"></i> E-mail</a></li>
+					<li><a href="https://www.instagram.com/dinivan.nendra/" target="_blank" title="See my Instagram"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-instagram d-block"></i> Instagram</a></li>
+					<li><a href="https://www.facebook.com/dean.n.indra/" target="_blank" title="See my Facebook"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-facebook d-block"></i> Facebook</a></li>
+					<li><a href="https://twitter.com/unaivan_" target="_blank" title="See my tweets"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-twitter d-block"></i> Twitter</a></li>
+					<li><a href="https://www.linkedin.com/in/dinivan-nendra-gunawan-bb0a64122/" target="_blank" title="See my LinkedIn"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-linkedin d-block"></i> LinkedIn</a></li>
+					<li><a href="https://dribbble.com/unaivan" target="_blank" title="See my Dribbble"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-dribbble d-block"></i> Dribbble</a></li>
+					<li><a href="https://wa.me/6289513627458" target="_blank" title="Text me"><span class="mdi mdi-instagram" aria-hidden="true" aria-role="presentation"></span> <i class="icon-3x la socicon-whatsapp d-block"></i> WhatsApp</a></li>
+				</ul>
+			</aside>
+			<a href="#close" class="btn-close" aria-hidden="true"><span class="mdi mdi-close"></span><span class="sr-only">Close</span></a>
+		</div>
+
 		<!--begin::Scrolltop-->
 		<div id="kt_scrolltop" class="scrolltop">
 			<span class="svg-icon">

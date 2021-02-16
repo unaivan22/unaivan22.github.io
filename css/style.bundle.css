@@ -37675,7 +37675,7 @@ button {
   .btn.btn-clean.dropdown-toggle:after {
     color: #B5B5C3; }
   .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled), .btn.btn-clean:focus:not(.btn-text), .btn.btn-clean.focus:not(.btn-text) {
-    color: #F64E60;
+    color: #47a2fc;
     background-color: #F3F6F9;
     border-color: transparent; }
     .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) i, .btn.btn-clean:focus:not(.btn-text) i, .btn.btn-clean.focus:not(.btn-text) i {
@@ -37707,7 +37707,7 @@ button {
   .btn.btn-clean:not(:disabled):not(.disabled):active:not(.btn-text), .btn.btn-clean:not(:disabled):not(.disabled).active,
   .show > .btn.btn-clean.dropdown-toggle,
   .show .btn.btn-clean.btn-dropdown {
-    color: #F64E60;
+    color: #208FFF;
     background-color: #F3F6F9;
     border-color: transparent; }
     .btn.btn-clean:not(:disabled):not(.disabled):active:not(.btn-text) i, .btn.btn-clean:not(:disabled):not(.disabled).active i,

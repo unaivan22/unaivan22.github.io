@@ -1,8 +1,8 @@
-var interaction = [
+var brainstorming = [
     ["User Research"],['Wireframing'],['Prototyping'],['A/B Testing'],
 ]
   
-var data0 = interaction.reduce((ac, ele) => {
+var data0 = brainstorming.reduce((ac, ele) => {
   
     ac += `<p>${ele[0]}</p>`
 
@@ -35,6 +35,11 @@ var data2 = coding.reduce((ac, ele) => {
 }, '')
 
 
-document.getElementById("interaction").innerHTML = data0;
+document.getElementById("brainstorming").innerHTML = data0;
 document.getElementById("tools").innerHTML = data1;
 document.getElementById("coding").innerHTML = data2;
+
+
+
+var element = document.getElementById("aboutNav");
+  element.classList.add("active");
