@@ -11,7 +11,7 @@ var data0 = brainstorming.reduce((ac, ele) => {
   }, '')
 
 var tools = [
-    ["Adobe Photoshop"],['Adobe Illustrator'],['Adobe XD'],['Sketch'],['Figma'],['Zeplin']
+    ["Photoshop"],['Illustrator'],['Adobe XD'],['Sketch'],['Figma'],['Zeplin']
 ]
   
 var data1 = tools.reduce((ac, ele) => {
