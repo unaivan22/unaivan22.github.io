@@ -46,6 +46,10 @@ body {
     object-fit: cover;
 }
 
+.intro {
+  font-size: 4rem;
+}
+
 .desc {
     display: -webkit-box;
     -webkit-line-clamp: 6;

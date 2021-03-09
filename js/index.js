@@ -21,7 +21,7 @@ var projects = [
   
 var data0 = projects.reduce((ac, ele) => {
   
-    ac += `<div class="row mt-40 projects">
+    ac += `<div class="row mt-40 projects d-flex align-items-center">
         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 order-last order-md-last order-lg-first">
             <a href="` + baseUrl + `${ele[0]}" class="font-weight-bolder h1 text-dark project-title ">${ele[1]}</a>
             <p class="divider"></p>
