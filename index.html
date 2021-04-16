@@ -84,7 +84,7 @@
 								<section class="my-20">
 									<div class="row">
 										<!-- <h1 class="col-md-8 col-lg-8 col-sm-12 col-xs-12 font-weight-normal ">Hello! I’m Dinivan Nendra G. <br>an UI/UX Designer from Surabaya, Indonesia.</h1> -->
-										<h1 class="col-10 intro">Dinivan Nendra is an Indonesian UI/UX designer at Energeek, currently designing features and experiences for the Energeek Development Team, based in Surabaya, Indonesia.</h1>
+										<h1 id="intro" class="col-10">Dinivan Nendra is an Indonesian UI/UX designer at Energeek, currently designing features and experiences for the Energeek Development Team, based in Surabaya, Indonesia.</h1>
 									</div>
 								</section>
 
@@ -174,11 +174,13 @@
 			function toggle() {
 				if (window.innerWidth < 800) { 
 					document.getElementById("container").classList.remove("px-20");
-					document.getElementById("container").classList.add("px-10");  
+					document.getElementById("container").classList.add("px-10");
+					document.getElementById('intro').classList.add('intro-mobile');  
 				}
 				else {
 					document.getElementById("container").classList.remove("px-10");
 					document.getElementById("container").classList.add("px-20");  
+					document.getElementById('intro').classList.remove('intro-mobile');  
 				}    
 			}
 		</script>
